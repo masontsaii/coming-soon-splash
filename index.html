@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <link rel ="shortcut icon" href="ellerie.png">
+    <audio autoplay id="415">
+    <source src="champion.mp3">
+</audio>
+
+<script>
+  var audio = document.getElementById("415");
+  audio.volume = 0.2;
+</script>
+
+    <meta charset="utf-8">
+    <title>mas | @not_sus_mas</title>
+    <meta name="author" content="EatSleepCodeRepeat">
+    <meta name="description" content="EatSleepCodeRepeat">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="style.css"/>
+
+<script type="text/javascript">
+		 function mousehandler(e) {
+		     var myevent = (isNS) ? e : event;
+		     var eventbutton = (isNS) ? myevent.which : myevent.button;
+		     if ((eventbutton == 2) || (eventbutton == 3)) return false;
+		 }
+		 document.oncontextmenu = mischandler;
+		 document.onmousedown = mousehandler;
+		 document.onmouseup = mousehandler;
+		 function disableCtrlKeyCombination(e) {
+		     var forbiddenKeys = new Array("a", "s", "c", "x","u");
+		     var key;
+		     var isCtrl;
+		     if (window.event) {
+		         key = window.event.keyCode;
+		         //IE
+		         if (window.event.ctrlKey)
+	              isCtrl = true;
+	          else
+	              isCtrl = false;
+		     }
+		     else {
+		         key = e.which;
+	          //firefox
+	          if (e.ctrlKey)
+	              isCtrl = true;
+	          else
+		             isCtrl = false;
+		     }
+		     if (isCtrl) {
+		         for (i = 0; i < forbiddenKeys.length; i++) {
+		             //case-insensitive comparation
+		             if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+		                 return false;
+		             }
+		         }
+		     }
+		     return true;
+		 }
+</script>
+</head>
+
+<body>
+    <p data-text="COMING SOON">COMING SOON</p>
+		<body oncontextmenu="return false">
+</body>
+
+</html>
